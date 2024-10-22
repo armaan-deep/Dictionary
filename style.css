@@ -1,0 +1,118 @@
+body {
+  text-align: center;
+  background-color: rgb(6, 109, 146);
+  color: white;
+  margin: 0%;
+  padding: 0%;
+}
+
+.btn {
+  /* Search button */
+  width: 3rem;
+  height: 2.5rem;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  background-color: transparent;
+  border-style: none !important;
+}
+
+.con {
+  /* Container to display data*/
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.con li {
+  /* Container list item*/
+  list-style: disc;
+  font-size: 1.2rem;
+}
+
+.con p {
+  /* Container  paragraph*/
+  font-size: 1.2rem;
+}
+
+.source_link {
+  color: red;
+  text-decoration: none;
+}
+h1 {
+  color: black;
+}
+
+.ring {
+  /* Spinner / Loader */
+  margin: 2rem auto auto auto;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  box-shadow: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px crimson;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+#inp {
+  /* Input box */
+  height: 1.5rem;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.hov:hover {
+  /* Animation on text */
+  transition: 0.8s ease-out;
+  scale: 1.07;
+}
+.shd:hover {
+  /* Animation on text and lighting */
+  box-shadow: 4px 4px 8px rgb(27, 189, 253);
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.foot-img {
+  width: 1.4rem;
+}
+
+.foot-img:hover {
+  transition: 0.8s ease-out;
+  scale: 1.2;
+}
